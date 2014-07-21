@@ -1,4 +1,4 @@
 kc-wp-kickoff
 =============
 
-A simple Kickoff theme for wordpress
+A simple-plain HTML theme for wordpress
