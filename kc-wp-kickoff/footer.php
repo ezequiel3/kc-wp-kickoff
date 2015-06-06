@@ -1,8 +1,8 @@
 			<hr />
-			<?php dynamic_sidebar( 'bar-2' ); ?>
+			<?php dynamic_sidebar('widget-footer'); ?>
 			<hr />
 			<footer id="main-footer">
-				<p>&copy; Copyright 20XX Author</p>
+				<p>&copy; Copyright 20XX <?php the_author(); ?></p>
 			</footer>
 		</div>
 		<?php wp_footer(); ?>

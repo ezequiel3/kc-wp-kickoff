@@ -1,2 +1,9 @@
 ﻿@charset "utf-8";
 /*YOUR STYLES HERE*/
+
+hr{
+	display:none;
+}
+hr.visible{
+	display:block;
+}

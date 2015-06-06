@@ -1,179 +1,9 @@
 ﻿@charset "utf-8";
-/* ==================================================================
-   * Setup.css is not just a reset, is an entire set of rules thought
-   * to let the path clear for creating your Front End in a
-   * cross-platform way.
-   * 
-   * kc-setup is complete thanks to normalize.css
-   * http://necolas.github.io/normalize.css/
-   ================================================================== */
-
-/*RESET STYLES*/
-html,
-button,
-input,
-select,
-textarea{font-family:Arial,FreeSans;}
-html{
-	font-size:100%;
-	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%;
-}
-html{
-	background-color:#fff;
-}
-body{margin:0;line-height:1.5em;padding:1em;}
-body,
-a{color:#000;}
-a:focus{outline:thin dotted;}
-a:active,
-a:hover{outline:0;}
-button,input,select,textarea{
-    font-size:1em;
-    margin:0;
-    vertical-align:baseline;
-    *vertical-align: middle;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"]{
-	-webkit-appearance:button;
-	*overflow:visible;
-}
-button,input{line-height: normal;}
-button,select{text-transform:none;}
-button::-moz-focus-inner,
-input::-moz-focus-inner{border:0;padding:0;}
-button[disabled],
-html input[disabled]{cursor: default;}
-input[type="checkbox"],
-input[type="radio"]{
-    box-sizing:border-box;
-    padding:0;
-    *height:13px;
-    *width:13px;
-}
-input[type="search"]{
-    -webkit-appearance:textfield;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
-    box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration{
-    -webkit-appearance:none;
-}
-textarea{overflow:auto;vertical-align:top;}
-
-img{
-	border:0;
-	outline:0;
-	-ms-interpolation-mode:bicubic;
-	vertical-align:middle;
-}
-
-blockquote{margin:1em 2em;}
-ul,ol,dl,menu{margin:0;padding: 0 0 0 2em;}
-li,dd{padding:0 0 0 2em;margin:0;}
-li{display:list-item;list-style:disc outside none;}
-ol li{list-style:decimal outside none;}
-nav ul,
-nav ol{list-style:none;list-style-image:none;}
-nav ul a{text-decoration:none;}
-nav li{padding:0}
-ul,ol,header,section,footer,nav,article,aside,
-h1,h2,h3,h4,h5,h6{margin:0 0 1em 0;}
-h1{font-size:2em;}
-h2{font-size:1.8em;}
-h3{font-size:1.6em;}
-h4{font-size:1.4em;}
-h5{font-size:1.2em;}
-h6{font-size:1em;}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a{text-decoration:none;}
-
-table{
-	width:100%;
-	border-collapse:collapse;
-	empty-cells:show;
-	border-spacing:0;
-}
-
-abbr[title]{border-bottom:1px dotted;}
-b,strong{font-weight:bold;}
-dfn{font-style: italic;}
-hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;margin:1em 0;}
-mark{background-color:#ff0;color:#000;}
-pre,code,kbd,samp{
-    font-family:monospace,serif;
-    _font-family:'courier new',monospace;
-    font-size:1em;
-}
-p,pre{margin:1em 0;}
-pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
-q{quotes:none;}
-q:before,
-q:after{content:'';content:none;}
-small{font-size:0.8em;}
-sub,sup{
-    font-size:0.75em;
-    line-height:0;
-    position:relative;
-    vertical-align:baseline;
-}
-sub{bottom:-0.25em;}
-sup{top:-0.5em;}
-
-svg:not(:root){overflow:hidden;}
-
-form{margin:0;}
-fieldset{border:1px solid #c0c0c0;margin:0;padding:1em;}
-legend {
-    border:0;
-    padding:0;
-    white-space:normal;
-    *margin-left:-7px;
-}
-
-/*HTML5 Init*/
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup, /*Deprecated (yes, already)*/
-main,
-nav,
-section,
-summary{
-    display:block;
-}
-canvas,
-video,
-audio{display:inline-block;*display:inline;*zoom:1;}
-audio:not([controls]){display:none;height:0;}
-[hidden]{display:none;}
-[unselectable="on"],.unselectable{
-	-moz-user-select:-moz-none;
-	-khtml-user-select:none;
-	-webkit-user-select:none;
-	-o-user-select:none;
-	user-select:none;
-}
-figure{margin:0;}
-
 /*GLOBAL CLASSES*/
 .display-none{display:none;}
 .hidden{visibility:hidden;}
 .display-block{display:block;}
-.display-inline-block{display:inline-block;*display:inline;zoom:1;}
+.display-inline-block{display:inline-block;}
 .display-inline{display:inline;}
 .clear{clear:both;}
 .italic{font-style:italic;}
@@ -182,6 +12,7 @@ figure{margin:0;}
 .right{float:right;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
+.text-left{text-align:left;}
 .underline{text-decoration:underline;}
 .decoration-none{text-decoration:none;}
 .cross-out{text-decoration:line-through;}
@@ -192,4 +23,25 @@ figure{margin:0;}
 .list-inline-block{padding-left:0;}
 	.list-inline-block li{display:inline-block;}
 .default-margin{margin:1em;}
+.default-margin-bottom{margin-bottom:1em;}
+.no-margin{margin:0;}
 .default-padding{padding:1em;}
+.default-padding-bottom{padding-bottom:1em;}
+.default-padding-top{padding-top:1em;}
+.default-padding-sides{padding-left:1em;padding-right:1em;}
+.no-padding-top{padding-top:0;}
+.no-padding-bottom{padding-bottom:0;}
+.no-padding-top-bottom{padding-top:0;padding-bottom:0;}
+
+/*GENERAL CONTAINERS*/
+#main-header .site-title{
+	font-size:2em;
+	margin:0;
+}
+#main-header .site-subtitle{
+	font-size:1.5em;
+	margin:0;
+}
+#main-section article .article-title{
+	font-size: 1.2em;
+}
